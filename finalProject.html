@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEB-115 Final Project</title>
+
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            margin: 1;
+            padding: 1;
+            box-sizing: border-box;
+        }
+
+        .myMealForm {
+            margin:auto;
+            padding: 10px;
+            border: 3px solid black;
+            background-color: cornsilk;
+        }
+
+        .banner img {
+            margin: 0;
+            object-position: center;
+            float: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            object-fit: contain;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        fieldset h3 {
+            font-size: larger;
+            text-align: center;
+        }
+
+        fieldset div {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        input {
+            padding: auto;
+            margin: auto;
+            border: 1.5px solid black;
+            background-color:aliceblue;
+        }
+
+        button {
+            padding: auto;
+            background-color: aliceblue;
+            color:black;
+            border:2px;
+            border-color: black;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="banner.png" alt="banner photo">
+    </div>
+
+    <h2>Weekly Meal Plan</h2>
+
+    <form id = "myMealForm">
+    
+        <!-- Monday Meal Input Fields -->
+        <fieldset>        
+            <h3>Monday</h3>
+
+            <div>
+                <label for="monBreakfast"> Breakfast</label>
+                <input type="text" id="monday-breakfast" name="monday-breakfast" required>
+            </div>
+            <div>
+                <label for="monSnack1"> Snack 1</label>
+                <input type="text" id="monday-snack1" name="monday-snack1" required>
+            </div>
+            <div>
+                <label for="monLunch"> Lunch</label>
+                <input type="text" id="monday-lunch" name="monday-lunch" required>
+            </div>
+            <div>
+                <label for="monSnack2"> Snack 2</label>
+                <input type="text" id="monday-snack2" name="monday-snack2" required>
+            </div>
+            <div>
+                <label for="monDinner"> Dinner</label>
+                <input type="text" id="monday-dinner" name="monday-dinner" required>
+            </div>
+        </fieldset>
+
+        <!-- Tuesday Meal Input Fields -->
+        <fieldset>
+            <h3>Tuesday</h3>
+            <div>
+                <label for="tuesBreakfast"> Breakfast</label>
+                <input type="text" id="tuesday-breakfast" name="tuesday-breakfast" required>
+            </div>
+            <div>
+                <label for="tuesSnack1"> Snack 1</label>
+                <input type="text" id="tuesday-snack1" name="tuesday-snack1" required>
+            </div>
+            <div>
+                <label for="tuesLunch"> Lunch</label>
+                <input type="text" id="tuesday-lunch" name="tuesday-lunch" required>
+            </div>
+            <div>
+                <label for="tuesSnack2"> Snack 2</label>
+                <input type="text" id="tuesday-snack2" name="tuesday-snack2" required>
+            </div>
+            <div>
+                <label for="tuesDinner"> Dinner</label>
+                <input type="text" id="tuesday-dinner" name="tuesday-dinner" required>
+            </div>
+        </fieldset>
+
+        <!-- Wednesday Meal Input Fields -->
+        <fieldset>
+            <h3>Wednesday</h3>
+            <div>
+                <label for="wedBreakfast"> Breakfast</label>
+                <input type="text" id="wednesday-breakfast" name="wednesday-breakfast" required>
+            </div>
+            <div>
+                <label for="wedSnack1"> Snack 1</label>
+                <input type="text" id="wednesday-snack1" name="wednesday-snack1" required>
+            </div>
+            <div>
+                <label for="wedLunch"> Lunch</label>
+                <input type="text" id="wednesday-lunch" name="wednesday-lunch" required>
+            </div>
+            <div>
+                <label for="wedSnack2"> Snack 2</label>
+                <input type="text" id="wednesday-snack2" name="wednesday-snack2" required>
+            </div>
+            <div>
+                <label for="wedDinner"> Dinner</label>
+                <input type="text" id="wednesday-dinner" name="wednesday-dinner" required>
+            </div>
+        </fieldset>
+
+        <!-- Thursday Meal Input Fields -->
+        <fieldset>
+        <h3>Thursday</h3>
+            <div>
+                <label for="thursBreakfast"> Breakfast</label>
+                <input type="text" id="thursday-breakfast" name="thursday-breakfast" required>
+            </div>
+            <div>
+                <label for="thursSnack1"> Snack 1</label>
+                <input type="text" id="thursday-snack1" name="thursday-snack1" required>
+            </div>
+            <div>
+                <label for="thursLunch"> Lunch</label>
+                <input type="text" id="thursday-lunch" name="thursday-lunch" required>
+            </div>
+            <div>
+                <label for="thursSnack2"> Snack 2</label>
+                <input type="text" id="thursday-snack2" name="thursday-snack2" required>
+            </div>
+            <div>
+                <label for="thursDinner"> Dinner</label>
+                <input type="text" id="thursday-dinner" name="thursday-dinner" required>
+            </div>
+        </fieldset>
+
+        <!-- Friday Meal Input Fields -->
+        <fieldset>
+            <h3>Friday</h3>
+            <div>
+                <label for="friBreakfast"> Breakfast</label>
+                <input type="text" id="friday-breakfast" name="friday-breakfast" required>
+            </div>
+            <div>
+                <label for="friSnack1"> Snack 1</label>
+                <input type="text" id="friday-snack1" name="friday-snack1" required>
+            </div>
+            <div>
+                <label for="friLunch"> Lunch</label>
+                <input type="text" id="friday-lunch" name="friday-lunch" required>
+            </div>
+            <div>
+                <label for="friSnack2"> Snack 2</label>
+                <input type="text" id="friday-snack2" name="friday-snack2" required>
+            </div>
+            <div>
+                <label for="friDinner"> Dinner</label>
+                <input type="text" id="friday-dinner" name="friday-dinner" required>
+            </div>
+        </fieldset>
+        
+        <!-- Saturday Meal Input Fields -->
+        <fieldset>
+            <h3>Saturday</h3>
+            <div>
+                <label for="satBreakfast"> Breakfast</label>
+                <input type="text" id="saturday-breakfast" name="saturday-breakfast" required>
+            </div>
+            <div>
+                <label for="satSnack1"> Snack 1</label>
+                <input type="text" id="saturday-snack1" name="saturday-snack1" required>
+            </div>
+            <div>
+                <label for="satLunch"> Lunch</label>
+                <input type="text" id="saturday-lunch" name="saturday-lunch" required>
+            </div>
+            <div>
+                <label for="satSnack2"> Snack 2</label>
+                <input type="text" id="saturday-snack2" name="saturday-snack2" required>
+            </div>
+            <div>
+                <label for="satDinner"> Dinner</label>
+                <input type="text" id="saturday-dinner" name="saturday-dinner" required>
+            </div>
+        </fieldset>
+
+        <!-- Sunday Meal Input Fields -->
+        <fieldset>
+            <h3>Sunday</h3>
+            <div>
+            <label for="sunBreakfast">Breakfast</label>
+            <input type="text" id="sunday-breakfast" name="sunday-breakfast" required>
+            </div>
+            <div>
+                <label for="sunSnack1">Snack 1</label>
+                <input type="text" id="sunday-snack1" name="sunday-snack1" required>
+            </div>
+            <div>
+                <label for="sunLunch">Lunch</label>
+                <input type="text" id="sunday-lunch" name="sunday-lunch" required>
+            </div>
+            <div>
+                <label for="sunSnack2">Snack 2</label>
+                <input type="text" id="sunday-snack2" name="sunday-snack2" required>
+            </div>
+            <div>
+                <label for="sunDinner">Dinner</label>
+                <input type="text" id="sunday-dinner" name="sunday-dinner" required>
+            </div>
+        </fieldset>
+            <br><br>
+
+            <div class="personal">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="email">
+                <label>Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="goal">
+                <label>Weekly Goal:</label>
+                <input type="number" id="goal" required>
+            </div>
+
+            <div>
+                <button type="reset" id="clear">Clear</button>
+                <button type = "button" onCLick="mealPlanWindow()">Generate Meal Plan</button>
+            </div>
+
+        </form>
+        <div id="custMealPlan"></div>
+    </div>
+
+    <script type="text/javascript" src="projectJS.js"></script>
+
+</body>
+</html>
